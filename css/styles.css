@@ -997,23 +997,6 @@ footer {
     }
 }
 
-/* Fix menu for small screens */
-@media (max-width: 768px) {
-    #menu {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.9);
-        display: none;
-        padding: 10px 0;
-        text-align: center;
-	}
-    #menu li {
-        display: block;
-        margin: 10px 0;
-    }
-}
 
 /* Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
