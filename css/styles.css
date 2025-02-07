@@ -204,11 +204,12 @@ footer {
 
 .btn-rounded-white {
 	display: inline-block;
-	color: #fff;
+	color: #000000;
 	padding: 15px 25px;
 	border: 3px solid #fff;
 	border-radius: 30px;
-	transition: .5s ease all
+	transition: .5s ease all;
+	background: white;
 }
 
 .btn-rounded-white:hover {
@@ -257,8 +258,30 @@ footer {
 	background: url(../images/lead-bg.jpg);
 	background-size: cover;
 	padding: 15px;
-	overflow: hidden
+	overflow: hidden;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
+
+#lead::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4); /* White overlay with 50% opacity */
+    z-index: 1;
+}
+
+/* Ensure content is above the faded background */
+#lead > * {
+    position: relative;
+    z-index: 2;
+}
+
 
 #lead-content {
 	position: absolute;
@@ -598,13 +621,13 @@ footer {
 
 #contact {
 	padding: 50px 15px;
-	background: #3498db;
+	background: #f2f2f5;
 	text-align: center
 }
 
 #contact h2 {
 	margin: 0 0 15px 0;
-	color: #fff;
+	color: #374054;
 	font-weight: 500
 }
 
@@ -621,19 +644,19 @@ footer {
 	border-radius: 4px;
 	border: none;
 	margin-bottom: 10px;
-	background: #1d6fa5;
-	color: #fff;
+	background: #ffffff;
+	color: #000000;
 	transition: .5s ease all
 }
 
 #contact-form input::-webkit-input-placeholder,
 #contact-form textarea::-webkit-input-placeholder {
-	color: #fff
+	color: #000000
 }
 
 #contact-form input:-moz-placeholder,
 #contact-form textarea:-moz-placeholder {
-	color: #fff;
+	color: #000000;
 	opacity: 1
 }
 
@@ -651,7 +674,7 @@ footer {
 #contact-form input:focus,
 #contact-form textarea:focus {
 	outline: none;
-	background: #16527a
+	background: #f2f2f5
 }
 
 #contact-form textarea {
@@ -875,4 +898,72 @@ footer {
 
 .social-icons a:hover {
     color: #007bff;
+}
+
+.lead-left, .lead-right {
+    width: 48%;
+    text-align: center;
+}
+
+.lead-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.lead-left h2 {
+    font-size: 1.8rem;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: black;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.divider {
+    width: 2px;
+    height: 100px;
+    background: gray;
+    margin: 0 15px;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tech-icons img {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s;
+}
+
+.tech-icons img:hover {
+    transform: scale(1.2);
+}
+
+.tech-icons img {
+    animation: bounce 1s infinite alternate; /* Adjust duration as needed */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
 }
