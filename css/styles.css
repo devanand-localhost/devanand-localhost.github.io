@@ -967,3 +967,154 @@ footer {
         transform: translateY(-10px);
     }
 }
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .tech-icons img {
+        width: 40px;
+        height: 40px;
+    }
+    #lead {
+        padding: 20px;
+    }
+    #about .col-md-8 {
+        padding: 0 15px;
+    }
+    #skills ul {
+        padding-left: 20px;
+    }
+    #experience-timeline {
+        padding: 0 20px;
+    }
+    #contact-form input, #contact-form textarea {
+        width: 100%;
+    }
+}
+
+/* Fix menu for small screens */
+@media (max-width: 768px) {
+    #menu {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.9);
+        display: none;
+        padding: 10px 0;
+        text-align: center;
+	}
+    #menu li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Adjust the lead section */
+    #lead {
+        padding: 10px;
+    }
+
+    #lead h1 {
+        font-size: 28px; /* Smaller heading for mobile */
+    }
+
+    #lead h2 {
+        font-size: 18px; /* Smaller subheading for mobile */
+    }
+
+    #lead .tech-icons img {
+        width: 30px; /* Smaller icons for mobile */
+        height: 30px;
+        margin: 5px; /* Reduce spacing between icons */
+    }
+
+    #lead .btn-rounded-white {
+        font-size: 14px; /* Smaller button text */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+
+    /* Adjust the about section */
+    #about .col-md-8 {
+        padding: 0 10px; /* Reduce padding for mobile */
+    }
+
+    #about h1 {
+        font-size: 24px; /* Smaller heading for mobile */
+    }
+
+    #about p {
+        font-size: 14px; /* Smaller text for mobile */
+    }
+
+    /* Adjust the skills section */
+    #skills ul {
+        padding-left: 15px; /* Reduce padding for mobile */
+    }
+
+    #skills li {
+        font-size: 14px; /* Smaller text for mobile */
+    }
+
+    /* Adjust the experience section */
+    #experience-timeline {
+        padding: 0 10px; /* Reduce padding for mobile */
+    }
+
+    #experience-timeline h3 {
+        font-size: 18px; /* Smaller heading for mobile */
+    }
+
+    #experience-timeline h4 {
+        font-size: 16px; /* Smaller subheading for mobile */
+    }
+
+    #experience-timeline p {
+        font-size: 14px; /* Smaller text for mobile */
+    }
+
+    /* Adjust the education section */
+    .education-block h3 {
+        font-size: 18px; /* Smaller heading for mobile */
+    }
+
+    .education-block h4 {
+        font-size: 16px; /* Smaller subheading for mobile */
+    }
+
+    .education-block p {
+        font-size: 14px; /* Smaller text for mobile */
+    }
+
+    /* Adjust the contact section */
+    #contact h2 {
+        font-size: 24px; /* Smaller heading for mobile */
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        width: 100%; /* Full width for inputs on mobile */
+        font-size: 14px; /* Smaller text for mobile */
+    }
+
+    #contact-form button {
+        font-size: 14px; /* Smaller button text */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+
+    /* Adjust the footer */
+    footer .copyright p {
+        font-size: 12px; /* Smaller text for mobile */
+    }
+
+    footer .social ul li a {
+        font-size: 16px; /* Smaller social icons */
+    }
+}
