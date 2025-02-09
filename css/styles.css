@@ -81,19 +81,18 @@ header li {
 
 header a {
 	display: block;
-	color: #3498db;
+	color: #000000;
 	padding: 10px
 }
 
 header a:hover {
-	color: #217dbb;
+	color: #ffffff;
 	text-decoration: none;
-	background: #eee;
+	background: #000000;
 	border-radius: 4px
 }
 
 header a:focus {
-	color: #3498db;
 	text-decoration: none
 }
 
@@ -213,10 +212,14 @@ footer {
 }
 
 .btn-rounded-white:hover {
-	color: #3498db;
-	background: #fff;
+	color: #ffffff;
+	background: #000000;
 	text-decoration: none
 }
+
+.btn-rounded-white:active {
+	transform: scale(1.5);
+  }
 
 .shadow {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
@@ -904,7 +907,9 @@ footer {
     width: 48%;
     text-align: center;
 }
-
+.lead-right h1 {
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .lead-left h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
