@@ -606,7 +606,17 @@ footer {
   display: block;
   margin: 0 auto;
   padding: 0;
-  max-width: 800px;
+  max-width: 1000px;
+}
+
+#skills .skill-category {
+  margin-bottom: 24px;
+}
+
+#skills .skill-category h3 {
+  margin: 0 0 8px;
+  color: #374054;
+  font-size: 1.3em;
 }
 
 #skills li {
